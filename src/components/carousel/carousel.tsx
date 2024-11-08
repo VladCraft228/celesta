@@ -6,10 +6,9 @@ import { Button } from "@/components/ui/button"
 
 interface CarouselProps {
     children: React.ReactNode
-    slidesToShow?: number
 }
 
-export function Carousel({ children, slidesToShow = 1 }: CarouselProps) {
+export function Carousel({ children }: CarouselProps) {
     const [emblaRef, emblaApi] = useEmblaCarousel({
         loop: false,
     })

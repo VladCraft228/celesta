@@ -211,7 +211,7 @@ export function Main() {
             <section id="features" className="w-full py-12 md:py-24 lg:py-32 flex justify-center scroll-mt-[55px]">
                 <div className="container px-4 md:px-6">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Особливості</h2>
-                    <Carousel slidesToShow={5}>
+                    <Carousel>
                         {features.map((feature, index) => (
                             <Card key={index} className="h-full">
                                 <CardContent className="flex flex-col items-center space-y-4 p-6 h-full">
@@ -292,7 +292,7 @@ export function Main() {
                 <div className="container px-4 md:px-6">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Відгуки
                         клієнтів</h2>
-                    <Carousel slidesToShow={5}>
+                    <Carousel>
                         {reviews.map((review, index) => (
                             <Card key={index} className="h-full">
                                 <CardContent className="flex flex-col items-center space-y-4 p-6 h-full">
