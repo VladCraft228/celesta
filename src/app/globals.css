@@ -2,20 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+    font-family: Roboto Condensed, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer base {
+    :root {
+        /* Основні кольори з логотипу */
+        --primary: #2B7B93; /* Основний синій колір */
+        --primary-light: #69A7B9; /* Світліший відтінок синього */
+        --primary-dark: #1A5A6E; /* Темніший відтінок синього */
+
+        /* Світла тема */
+        --background: #ffffff;
+        --foreground: #1A2C35; /* Темно-синій для тексту */
+        --card: #ffffff;
+        --card-foreground: #1A2C35;
+        --popover: #ffffff;
+        --popover-foreground: #1A2C35;
+        --primary-foreground: #ffffff;
+        --secondary: #E8F1F3; /* Дуже світлий синій */
+        --secondary-foreground: #2B7B93;
+        --muted: #F5F9FA; /* Ще світліший синій */
+        --muted-foreground: #5A7A84;
+        --accent: #D5E6EA; /* Акцентний світло-синій */
+        --accent-foreground: #2B7B93;
+        --destructive: #FF4545;
+        --destructive-foreground: #ffffff;
+        --border: #D5E6EA;
+        --input: #E8F1F3;
+        --ring: #2B7B93;
+        --radius: 0.75rem;
+    }
+
+    .dark {
+        /* Темна тема */
+        --background: #1A2C35; /* Темно-синій фон */
+        --foreground: #E8F1F3;
+        --card: #243947; /* Трохи світліший темно-синій */
+        --card-foreground: #E8F1F3;
+        --popover: #243947;
+        --popover-foreground: #E8F1F3;
+        --primary: #69A7B9; /* Світліший синій для кращої видимості */
+        --primary-foreground: #1A2C35;
+        --secondary: #2B4855; /* Приглушений синій */
+        --secondary-foreground: #E8F1F3;
+        --muted: #2B4855;
+        --muted-foreground: #9BB5BE;
+        --accent: #2B7B93;
+        --accent-foreground: #E8F1F3;
+        --destructive: #FF6B6B;
+        --destructive-foreground: #1A2C35;
+        --border: #2B4855;
+        --input: #2B4855;
+        --ring: #69A7B9;
+    }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+    * {
+        @apply border-border scroll-smooth;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+
+    .toast-success {
+        @apply bg-background text-foreground dark:bg-background dark:text-foreground !important;
+
+        .Toastify__close-button {
+            @apply text-foreground dark:text-foreground !important;
+        }
+    }
+
+    .toast-error {
+        @apply bg-background text-foreground dark:bg-background dark:text-foreground !important;
+    }
 }
+
