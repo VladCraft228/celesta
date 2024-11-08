@@ -201,7 +201,7 @@ export function Main() {
                                 alt="Smart Speaker"
                                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
                                 height="400"
-                                src="/placeholder.png"
+                                src="./placeholder.png"
                                 width="600"
                             />
                         </div>
@@ -237,7 +237,7 @@ export function Main() {
                                 alt="Lumia колонка"
                                 className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center"
                                 height="400"
-                                src="/placeholder.png"
+                                src="./placeholder.png"
                                 width="750"
                             />
                             <div

@@ -14,7 +14,7 @@ export function Header() {
                     className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
                     width="32"
                     height="32"
-                    src="/logo.png"
+                    src="./logo.png"
                 />
                 <span className="ml-2 text-2xl font-bold text-foreground">Lumia</span>
             </Link>
