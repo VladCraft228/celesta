@@ -158,7 +158,7 @@ export function OrderModal({ isOpen, onOpenChangeAction, initialQuantity }: Orde
                         </div>
                     </div>
                     <DialogFooter>
-                        <Button type="submit">Замовити</Button>
+                        <Button type="submit" variant="secondary">Замовити</Button>
                     </DialogFooter>
                 </form>
             </DialogContent>

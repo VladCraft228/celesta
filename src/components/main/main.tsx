@@ -187,11 +187,11 @@ export function Main() {
                                 </p>
                             </div>
                             <div className="flex flex-col gap-2 sm:flex-row">
-                                <Button onClick={() => setIsModalOpen(true)} variant="outline" size="lg"
-                                        className="text-black dark:text-white">
+                                <Button onClick={() => setIsModalOpen(true)} size="lg" variant="default"
+                                        >
                                     Замовити зараз
                                 </Button>
-                                <Button asChild variant="outline" size="lg" className="text-black dark:text-white">
+                                <Button asChild size="lg" variant="default">
                                     <Link href="#features">Дізнатися більше</Link>
                                 </Button>
                             </div>
@@ -280,8 +280,7 @@ export function Main() {
                         <p className="max-w-[600px] text-muted-foreground md:text-xl">
                             &quot;{"Зробіть перший крок до покращення вашого ментального здоров'я."}&quot;
                         </p>
-                        <Button onClick={() => setIsModalOpen(true)} size="lg" variant="outline"
-                                className="text-black dark:text-white">
+                        <Button onClick={() => setIsModalOpen(true)} size="lg" variant="secondary">
                             Замовити зараз
                         </Button>
                     </div>
